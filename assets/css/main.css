@@ -350,7 +350,8 @@ header {
   text-align: center;
   position: relative;
   height: 6.5rem;
-  padding: 1rem;
+  justify-content: center;
+  /* padding: 1rem; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -359,6 +360,7 @@ header {
 
 .name-team h3 {
   font-size: 1.2rem;
+  margin-top: -1rem;
 }
 
 .item-team:nth-child(odd) .team .name-team {
@@ -737,7 +739,7 @@ header {
 }
 
 .contact input, .contact textarea {
-  padding: .5rem 1rem;
+  padding: 1.2rem;
   border: 1px solid #e2e2e2;
   margin-bottom: 1rem;
   width: 49%;
@@ -844,4 +846,28 @@ header {
   /* bottom: -9.5rem; */
   transform: rotate(-30deg);
   z-index: 1;
+}
+
+/* POWERED */
+
+.powered {
+  padding: 1rem;
+  background: #4e4e4e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.powered p {
+  margin-bottom: 0;
+}
+
+.rrss {
+  font-size: 2rem;
+}
+
+.rrss i {
+  margin: 0 .5rem ;
 }
