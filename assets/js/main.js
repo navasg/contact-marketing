@@ -3,8 +3,34 @@ $('.slick-team').slick({
   slidesToShow: 3,
   slidestoScroll: 1,
   infinite: true,
+  arrows: false,
+
   // centerMode: true,
   dots: true,
+  responsive: [
+    {
+
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+
+
+      }
+    },
+
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+        // dots: false,
+
+      }
+    },
+
+  ]
 });
 
 $('.slider-for').slick({
@@ -20,8 +46,39 @@ $('.slider-nav').slick({
   slidesToScroll: 1,
   asNavFor: '.slider-for',
   centerMode: true,
+  arrows: false,
   focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
 
+    {
+      breakpoint: 950,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+
+
+      }
+    },
+
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // centerMode: false,
+        dots: false,
+
+      }
+    },
+
+  ]
 });
 
 
@@ -29,9 +86,40 @@ $('.slick-clients').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 4,
-  dots: true
+  dots: true,
+  arrows: false,
   // prevArrow: '<div class="slick-prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',//$('.slick-prev-arrow'),
   // nextArrow: '<div class="slick-next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',//$('.slick-next-arrow'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
+
+    {
+      breakpoint: 950,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+
+
+      }
+    },
+
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+
+      }
+    },
+
+  ]
 });
 
 

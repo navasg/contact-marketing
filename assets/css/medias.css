@@ -1,0 +1,16 @@
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  html {
+    font-size: 13px;
+  }
+
+
+  .subtitle-section {
+    padding: 0;
+  }
+
+  /* testimonies */
+
+  .box-testimonie {
+    width: 100%;
+  }
+}
