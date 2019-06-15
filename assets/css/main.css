@@ -371,6 +371,79 @@ header {
 .particles {
   position: absolute;
 }
+
+/* .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #f0ad4e;
+  content: ' '!important;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  opacity: .25;
+} */
+
+
+.slick-dots li button {
+  position: relative;
+  width: 1rem; 
+  height: .5rem;
+  padding: 0;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+}
+
+
+.slick-dots li button::before,
+.slick-dots li button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+}
+
+.slick-dots li button:before {
+  bottom: 100%;
+      opacity: 1;
+  top: -1.4rem;
+  border-bottom: .3rem solid #64C7CC;
+}
+
+.slick-dots li button:after {
+  top: 100%;
+  width: 0;
+  left: 0;
+  
+  border-top: .3rem solid #64C7CC;
+}
+
+.slick-active button {
+  background: #f28f3d!important;
+}
+
+.slick-active button:after  {
+  border-top: .3rem solid #f28f3d!important;
+}
+
+.slick-active button:before  {
+  border-bottom: .3rem solid #f28f3d!important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+
+
 /* 
 .floating {  
 
@@ -388,12 +461,9 @@ header {
 
 .particle-7 {
   width: 2rem;
-  bottom: 21%;
-  left: 33%;
-  z-index: 9;
-  transition: all 1s ease;
-  transform: scale(1)
-  
+  bottom: 10%;
+  left: 12%;
+  z-index: -1;
 }
 
 .particle-4 {
@@ -684,7 +754,7 @@ header {
 .hex-top::before {
   content: "";
   height: 1rem;
-  background: #fff;
+  background: #f7f7f7;
   width: 100%;
   right: -1rem;
   bottom: -.5rem;  position: absolute;
@@ -696,7 +766,7 @@ header {
 .hex-top::after {
   content: "";
   height: 1rem;
-  background: #fff;
+  background: #f7f7f7;
   width: 100%;
   left: -1rem;
   bottom: -.5rem;  position: absolute;
@@ -713,7 +783,7 @@ header {
 .hex-bottom::before {
   content: "";
   height: 1rem;
-  background: #fff;
+  background: #f7f7f7;
   width: 100%;
   right: -1rem;
   top: -.5rem;  position: absolute;
@@ -725,7 +795,7 @@ header {
 .hex-bottom::after {
   content: "";
   height: 1rem;
-  background: #fff;
+  background: #f7f7f7;
   width: 100%;
   left: -1rem;
   top: -.5rem;  position: absolute;
