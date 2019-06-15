@@ -361,6 +361,7 @@ header {
 .name-team h3 {
   font-size: 1.2rem;
   margin-top: -1rem;
+  width: 49%
 }
 
 .item-team:nth-child(odd) .team .name-team {
