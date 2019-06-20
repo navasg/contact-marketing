@@ -1,3 +1,13 @@
+wow = new WOW(
+  {
+    animateClass: 'animated',
+    offset: 100,
+    callback: function (box) {
+      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+    }
+  }
+);
+wow.init();
 
 $('.slick-team').slick({
   slidesToShow: 3,
@@ -60,8 +70,8 @@ $('.slider-nav').slick({
     {
       breakpoint: 950,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 1,
 
 
       }
