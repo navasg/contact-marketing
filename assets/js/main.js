@@ -1,10 +1,8 @@
 wow = new WOW(
   {
     animateClass: 'animated',
+    mobile: false,
     offset: 100,
-    callback: function (box) {
-      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-    }
   }
 );
 wow.init();
@@ -116,6 +114,7 @@ $('.slick-clients').slick({
         slidesToScroll: 2,
 
 
+
       }
     },
 
@@ -125,6 +124,7 @@ $('.slick-clients').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
+        autoplay: true
 
       }
     },

@@ -742,6 +742,12 @@ header {
   color: #7b7d80;
 }
 
+.text-testimonie h3 {
+  font-size: 1.5rem;
+  color: #7b7d80;
+  margin-bottom: 1rem;
+}
+
 .img-testimonie {
   width: 8rem;
   height: 9rem;
@@ -855,6 +861,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.clients .slick-dots {
+  bottom: -5rem;
 }
 
 /* BLOG */
@@ -1011,6 +1021,10 @@ header {
 .item-flex {
   display: flex;
   margin-bottom: 1rem;
+}
+
+.input-flex input:nth-child(3) {
+  width: 100%;
 }
 
 .contact input, .contact textarea, .detail-single-post textarea, .detail-single-post input, .detail-single-post textarea  {
